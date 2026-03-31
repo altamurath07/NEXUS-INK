@@ -72,6 +72,41 @@ flowchart TD
   </div>
 </div>
 
+## Firmware
+
+Written in Python, structured as a set of importable modules under `firmware/`.
+
+The entry point is `main.py` — it boots the display, starts the encoder listener,
+then runs a continuous loop that handles scheduled content refreshes and real-time
+knob input.
+
+### Modules
+
+| Module | What it does |
+|---|---|
+| `config/` | Central config — hw pins, display specs, paths, all pulled from `.env` |
+| `display/` | IT8951 eink driver + PIL image renderer for text, splash + error screens |
+| `input/` | EC11 rotary encoder reader via OPi.GPIO — cw/ccw/press/long press events |
+| `ai/` | Ollama summariser, MiniLM embeddings, ChromaDB vector memory for dedup |
+| `reddit/` | PRAW wrapper that fetches hot posts from configured subreddits |
+
+### How it runs
+
+1. Splash screen shown on boot
+2. First batch of posts fetched, summarised w/ local LLM, stored in vector db
+3. Top post rendered to screen
+4. Encoder lets you scroll fwd/back through posts, press to force refresh
+5. Scheduler auto-refreshes content every 30 min (configurable via `.env`)
+
+### Dependencies
+
+Install with:
+```bash
+pip install -r requirements.txt
+```
+
+Requires a running [Ollama](https://ollama.com) instance w/ `mistral` pulled,
+and Reddit API credentials in `.env`.
 ## Bill of Materials (BOM)
 | Comment | Location | Interface | Link | Quantity | Total Price |
 |---|---|---|---|---|---|
