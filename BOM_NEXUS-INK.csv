@@ -1,0 +1,14 @@
+Comment,Location,Interface,Link,Quantity,Total Price,Funded By
+Orange Pi 5 Plus 32GB,"Base mount, centre",-,https://www.alibaba.com/product-detail/Orange-Pi-5-Plus-32GB-RAM_1601051236285.html,1,€230.00,Hackclub
+Waveshare 7.8inch E-Ink HAT,"Front face, top panel",SPI / USB,https://www.alibaba.com/product-detail/WaveShare-1872-X-1404-7-8Inch_1600763875848.html,1,€115.00,Hackclub
+EC11 Rotary Encoder,Right side panel,GPIO BCM 17/18/27,https://www.aliexpress.com,1,~€2.00,Self
+128GB NVMe SSD M.2 2280,OPi M.2 slot,PCIe 3.0 x4,https://www.amazon.it,1,~€20.00,Self
+5V Blower Fan 50x15mm,Rear internal,5V fan header,https://www.aliexpress.com,1,~€5.00,Self
+40x40mm Aluminium Heatsink,OPi SoC top,Thermal adhesive,https://www.aliexpress.com,1,~€4.00,Self
+5V 4A Power Supply USB-C,Rear port,5V rail,https://www.amazon.it,1,~€10.00,Self
+Foam Baffle Strip 0.4mm,Display perimeter,Adhesive,https://www.aliexpress.com,1,~€2.00,Self
+Dupont Jumper Wires F-F 10cm,Internal routing,GPIO headers,https://www.aliexpress.com,1 set,~€2.00,Self
+3D Printed Shell,Outer enclosure,-,-,1,Free,Self
+
+Total requested from Hackclub,,,,,€345 (~$398 USD),Hackclub
+Self-funded estimate,,,,,~€45 (~$52 USD),Self
