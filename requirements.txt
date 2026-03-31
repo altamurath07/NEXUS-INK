@@ -1,0 +1,14 @@
+# NEXUS-INK Firmware Dependencies
+# Python 3.10+
+# Install: pip install -r requirements.txt
+
+praw==7.7.1
+ollama==0.1.8
+chromadb==0.4.22
+sentence-transformers==2.6.1
+Pillow==10.2.0
+it8951==0.0.7
+OPi.GPIO==0.5.2
+schedule==1.2.1
+python-dotenv==1.0.1
+loguru==0.7.2
